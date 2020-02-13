@@ -5,7 +5,14 @@ import {
   STUDY
 } from '../actions/moodActions';
   
-export default function reducer(state, action) {
+const intialState = {
+  coffees: 0,
+  snacks: 0,
+  naps: 0,
+  studies: 0
+};
+
+export default function reducer(state = intialState, action) {
   switch(action.type) {
     case DRINK_COFFEE:
       return { ...state, coffees: state.coffees + 1 };
@@ -16,6 +23,6 @@ export default function reducer(state, action) {
     case STUDY:
       return { ...state, studies: state.studies + 1 };
     default:
-      console.log(`unhandled name: ${name}`);
+      return state;
   }
 }

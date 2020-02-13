@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Moods container matches a snapshot 1`] = `
+<Fragment>
+  <Controls>
+    <button
+      onClick={[Function]}
+    >
+      coffee
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      snacks
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      naps
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      studies
+    </button>
+  </Controls>
+  <Face
+    emoji="😠"
+  />
+</Fragment>
+`;
