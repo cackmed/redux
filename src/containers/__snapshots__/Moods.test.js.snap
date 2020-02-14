@@ -1,35 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`container matches a snapshot 1`] = `
-<ContextProvider
-  value={
+<Provider
+  store={
     Object {
-      "store": Object {
-        "dispatch": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-        Symbol(observable): [Function],
-      },
-      "subscription": Subscription {
-        "handleChangeWrapper": [Function],
-        "listeners": Object {
-          "notify": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
-          "dispatch": [Function],
-          "getState": [Function],
-          "replaceReducer": [Function],
-          "subscribe": [Function],
-          Symbol(observable): [Function],
-        },
-        "unsubscribe": null,
-      },
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
     }
   }
 >
-  <Moods />
-</ContextProvider>
+  <Moods>
+    <Controls>
+      <section
+        className="Controls"
+      >
+        <button
+          onClick={[Function]}
+        >
+          coffee
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          snacks
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          naps
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          studies
+        </button>
+      </section>
+    </Controls>
+    <Face
+      emoji="😠"
+    >
+      <p
+        className="Face"
+      >
+        😠
+      </p>
+    </Face>
+  </Moods>
+</Provider>
 `;
